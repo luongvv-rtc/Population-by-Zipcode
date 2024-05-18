@@ -49,6 +49,18 @@ app = Flask(__name__)
 @app.route('/')
 def zipcodes_dash():
     return render_template('home.html')
+    app.debug = True
+
+# Using GET for /search argument
+@app.route('/search', methods=['GET'])
+def search():
+    zip_code = request.args.get('zipCode')
+
+    data = get_zip_results(zip_code)
+    population = data.population if data is not None else None
+
+    return render_template('gofecth.html', zipCode=zip_code, population=population)
+
 
 # Run Flask
 if __name__ == '__main__':
