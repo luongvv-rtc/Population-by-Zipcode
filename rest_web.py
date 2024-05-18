@@ -69,7 +69,22 @@ def get_zip_results(zip_code):
     connection.close()
     return result
 
+# Updates DB if zip and pop are valid arguments. Sends to fail if not
+@app.route('/update', methods=['POST'])
+def update():
+    zip_code = request.form['zipCode']
+    population = request.form['population']
 
+    if zip_code.isdigit() and population.isdigit():
+        zip_code = int(zip_code)
+        population = int(population)
+        if 0 <= zip_code <= 99999 and population >= 0:
+            connection = engine.connect()
+            query = text("UPDATE zipcodes SET population = :population WHERE zip_code = :zip_code")
+            connection.execute(query, {"zip_code": zip_code, "population": population})
+            connection.close()
+            return render_template('update_success.html')
+    return render_template('update_fail.html')
 
 # Run Flask
 if __name__ == '__main__':
