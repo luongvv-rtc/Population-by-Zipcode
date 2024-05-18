@@ -61,6 +61,15 @@ def search():
 
     return render_template('gofecth.html', zipCode=zip_code, population=population)
 
+# Queries the DB using input from zipCode
+def get_zip_results(zip_code):
+    connection = engine.connect()
+    query = text("SELECT * FROM zipcodes WHERE zip_code = :zip_code")
+    result = connection.execute(query, {"zip_code": zip_code}).fetchone()
+    connection.close()
+    return result
+
+
 
 # Run Flask
 if __name__ == '__main__':
