@@ -1,10 +1,10 @@
-# Population by zipcode
+# Population by Zipcode
 
 This repository contains data of the Zipcode and the population in the United States.
 
 ## Overview
 
-The crime rate dataset provides information on various types of crimes reported across different states in the USA for the year 2024. The data includes details such as crime type, location, and frequency of occurrence.
+The Zipcode and population is on the "zip_code_database.csv" file.
 
 ## Dataset
 
@@ -22,7 +22,6 @@ The analysis reveals trends and patterns in crime rates across different states 
 This program reads a CSV file from https://worldpopulationreview.com/state-rankings/crime-rate-by-state and tranfers it to a local phpadmin database, which is included in the project folder.  
 The program also plots figure for analytics for crime rate of States and the District of Columbia in the USA, based on crime per 100,000 people.
 
-![figure #3.jpg](figure%20%233.jpg)
 ## Usage
 
 To use this repository:
