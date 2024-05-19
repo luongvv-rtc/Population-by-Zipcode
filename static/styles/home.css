@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+}
+
+/* Style the submit buttons */
+button[type="submit"] {
+    background-color: red;
+    color: white; /* Optional: to make the text on the button white */
+    border: none; /* Optional: to remove the border around the button */
+    padding: 10px 20px; /* Optional: to add some padding for better appearance */
+    cursor: pointer; /* Optional: to change the cursor to pointer when hovering over the button */
+}
+
+/* Optional: Add some hover effects for the button */
+button[type="submit"]:hover {
+    background-color: darkred; /* Optional: darken the red color when hovering */
+}

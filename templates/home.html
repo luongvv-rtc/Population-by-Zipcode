@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Zipcode @ Van Vuong</title>
+    <title>Zipcode Look Up @ Van Vuong</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home.css') }}">
 </head>
 <body>
     <h1>Welcome to Zipcode Database @ Van Vuong</h1>
@@ -13,7 +14,7 @@
         <button type="submit">Search</button>
     </form>
 
-    <h2>Update the Zipcode Database</h2>
+    <h2>Update the Database</h2>
     <form action="/update" method="POST">
         <label for="updateZipCode">Enter Zip Code:</label>
         <input type="text" id="updateZipCode" name="zipCode">
@@ -23,3 +24,4 @@
     </form>
 </body>
 </html>
+
