@@ -26,4 +26,10 @@ git clone https://github.com/luongvv-rtc/Population-by-Zipcode
 
 ```
 
-To use this repository:
+## Scope:
+- Using Python to import the zip_code_database.csv file into MySQL database of LAMP/WAMP stack.
+- 
+
+
+## Outcomes:
+Home page:
