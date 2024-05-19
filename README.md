@@ -23,5 +23,4 @@ The following python packages must also be installed, pandas, matplotlib, SQLAlc
 
 ```sh
 git clone https://github.com/luongvv-rtc/Population-by-Zipcode
-
-## Outcomes
+```sh
