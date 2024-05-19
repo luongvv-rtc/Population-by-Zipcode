@@ -10,7 +10,7 @@ The Zipcode and population is on the "zip_code_database.csv" file.
 
 The dataset used in this analysis can be found in the project folder. It includes the following files:
 
-- `crime-rate-by-state-2024.csv`: Contains the raw data on crime rates for each state in the USA for the year 2024.
+- `zip_code_database.csv`: Contains the raw data on crime rates for each state in the USA for the year 2024.
 
 ## Usage
 
