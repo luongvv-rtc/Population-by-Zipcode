@@ -36,4 +36,5 @@ git clone https://github.com/luongvv-rtc/Population-by-Zipcode
 	+ Uses XML or JSON-packed messages to transport data
 
 ## Outcomes:
+Home page:
 ![Home page](Home.jpg)
