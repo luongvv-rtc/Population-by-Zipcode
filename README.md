@@ -36,17 +36,17 @@ git clone https://github.com/luongvv-rtc/Population-by-Zipcode
 	+ Uses XML or JSON-packed messages to transport data
 
 ## Outcomes:
-** Home page:**
+**Home page:**
 ![Home page](Home.jpg)
 
-** Search:**
+**Search:**
 ![Search page](gofetch.jpg)
 
-** Update:**
+**Update:**
 ![Update page](update.jpg)
 
-** Update success:**
+**Update success:**
 ![Update success page](update_success.jpg)
 
-** Update fail:**
+**Update fail:**
 ![Update fail page](update_fail.jpg)
